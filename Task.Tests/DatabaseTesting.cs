@@ -1,4 +1,4 @@
-/* TODO: uncomment this line 
+//TODO: uncomment this line 
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -8,8 +8,8 @@ using TechJobs6Persistent.Models;
 
 namespace Task.Tests
 {
-	public class DatabaseTesting
-	{
+    public class DatabaseTesting
+    {
 #nullable disable
         //Testing Databases using InMemory testing.
 
@@ -246,8 +246,8 @@ namespace Task.Tests
             var testSkill1 = new Skill() { SkillName = "Test Skill 1" };
             var testSkill2 = new Skill() { SkillName = "Test Skill 2" };
             ICollection<Skill> testSkills = new List<Skill>();
-                testSkills.Add(testSkill1);
-                testSkills.Add(testSkill2);
+            testSkills.Add(testSkill1);
+            testSkills.Add(testSkill2);
 
 
             var testJob1 = new Job() { Name = "Test Job 1", Skills = testSkills };
@@ -258,7 +258,7 @@ namespace Task.Tests
             context.SaveChanges();
 
             //add second skill to testjob2
-            
+
             var testJob2 = new Job() { Name = "Test Job 2", Skills = testSkills };
 
             // adding second job to Jobs
@@ -295,8 +295,8 @@ namespace Task.Tests
         }
 
         public DatabaseTesting()
-		{
-		}
-	}
+        {
+        }
+    }
 }
-TODO: uncomment this line */
+//TODO: uncomment this line
