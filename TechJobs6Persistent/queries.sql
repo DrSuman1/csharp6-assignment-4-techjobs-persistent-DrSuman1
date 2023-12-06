@@ -12,3 +12,4 @@
 --SELECT * FROM techjobs.employers where location='St.Louis';
 --Part 3: Write a query to return a list of the names and descriptions of all skills that are attached to jobs in alphabetical order.
     --If a skill does not have a job listed, it should not be included in the results of this query.
+    --SELECT * FROM techjobs.skills where SkillName IS NOT NULL order by SkillName;
